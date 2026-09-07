@@ -32,7 +32,7 @@ casual/
 `index.html` is personalized: RMIT Bachelor of Computer Science (2026–2029), Nossal High School (2022–2025), real Work Experience entries (UX/UI Web Designer for Dr Naba Alfayadh; Home Labs and Projects), real footer contact (`contact@itsjaskaran.com`, LinkedIn, GitHub). Still placeholder or unconfirmed:
 - Cert dates/credential IDs — "Month Year" / "XXXXXXXX" placeholders throughout, and A+/Network+/Security+ still marked "COMING SOON!"
 - All of `casual/` — hobbies, interests, fitness stats are still generic placeholders; footer LinkedIn link there is still `yourprofile`
-- Root also has files not part of the documented structure — `style.css`, `index.js` (an older dark-purple/Poppins theme with a JS theme toggle, contradicting the current "no toggle" decision), `data.docx`, `hqdefault.jpg`, `179310.png`, `Projects/sites.html`. Left alone intentionally (2026-08-23) — not cleaned up yet.
+- `data.docx` at repo root is intentionally kept — it's the raw bio/skills notes the `index.html` About/Skills copy was written from, not stray clutter. (The old `style.css`/`index.js` unused theme, `hqdefault.jpg`, `179310.png`, and the empty `Projects/sites.html` were removed 2026-09-07 — none were referenced by any page.)
 
 ## Deployment plan (started 2026-09-07)
 
