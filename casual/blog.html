@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Jaskaran Singh</title>
+  <meta name="description" content="Personal blog posts from Jaskaran Singh." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== Header / Nav ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Jaskaran<span class="logo-dot">.</span></a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="interests.html">Interests</a>
+        <a href="fitness.html">Fitness</a>
+        <a href="blog.html" aria-current="page">Blog</a>
+      </nav>
+
+      <button class="nav-toggle" data-nav-toggle aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+
+      <a href="../index.html" class="site-switch" aria-label="Back to the professional site">
+        <span class="site-switch-label site-switch-label--muted">Professional</span>
+        <span class="site-switch-visual" aria-hidden="true"><span class="site-switch-thumb"></span></span>
+        <span class="site-switch-label">Casual</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <p class="eyebrow">longer-form thoughts</p>
+      <h1 class="page-title">Blog</h1>
+      <p class="page-subtitle">
+        Updates, stories, and whatever's been on my mind. These are placeholder posts for now.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Posts ===== -->
+  <section class="section">
+    <div class="container">
+      <!--
+        data-blog-grid: if WORDPRESS_API_URL is set in script.js, these placeholder
+        cards are replaced with live posts fetched from the WordPress REST API.
+        Otherwise they're just edited by hand, same as any other page on this site.
+      -->
+      <div class="blog-grid" data-blog-grid>
+        <article class="blog-card">
+          <div class="blog-card-image">📝</div>
+          <div class="blog-card-body">
+            <p class="blog-card-date">Placeholder Date</p>
+            <h3>Placeholder Post Title One</h3>
+            <p>A short placeholder excerpt describing what this post is about goes here.</p>
+            <a class="blog-card-link" href="#">Read more →</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card-image">📝</div>
+          <div class="blog-card-body">
+            <p class="blog-card-date">Placeholder Date</p>
+            <h3>Placeholder Post Title Two</h3>
+            <p>A short placeholder excerpt describing what this post is about goes here.</p>
+            <a class="blog-card-link" href="#">Read more →</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card-image">📝</div>
+          <div class="blog-card-body">
+            <p class="blog-card-date">Placeholder Date</p>
+            <h3>Placeholder Post Title Three</h3>
+            <p>A short placeholder excerpt describing what this post is about goes here.</p>
+            <a class="blog-card-link" href="#">Read more →</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card-image">📝</div>
+          <div class="blog-card-body">
+            <p class="blog-card-date">Placeholder Date</p>
+            <h3>Placeholder Post Title Four</h3>
+            <p>A short placeholder excerpt describing what this post is about goes here.</p>
+            <a class="blog-card-link" href="#">Read more →</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card-image">📝</div>
+          <div class="blog-card-body">
+            <p class="blog-card-date">Placeholder Date</p>
+            <h3>Placeholder Post Title Five</h3>
+            <p>A short placeholder excerpt describing what this post is about goes here.</p>
+            <a class="blog-card-link" href="#">Read more →</a>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card-image">📝</div>
+          <div class="blog-card-body">
+            <p class="blog-card-date">Placeholder Date</p>
+            <h3>Placeholder Post Title Six</h3>
+            <p>A short placeholder excerpt describing what this post is about goes here.</p>
+            <a class="blog-card-link" href="#">Read more →</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="blog-note">
+        Managing this blog on WordPress? Open <code>casual/script.js</code> and set <code>WORDPRESS_API_URL</code> to
+        your site's URL (e.g. <code>https://blog.yourdomain.com</code>). The cards above will automatically be
+        replaced with your latest live posts pulled from the WordPress REST API — no other changes needed.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Footer / Contact ===== -->
+  <footer id="contact" class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h3>Come say hi</h3>
+        <p>Down to chat about hobbies, projects, or literally anything. Don't be shy.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Find Me</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:contact@itsjaskaran.com"><span aria-hidden="true">✉</span> contact@itsjaskaran.com</a></li>
+          <li><span aria-hidden="true">📍</span> Melbourne, Australia</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Elsewhere</h4>
+        <ul class="footer-links">
+          <li><a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="../index.html">Professional Site</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Jaskaran Singh. Built with claude and many redbulls :]</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

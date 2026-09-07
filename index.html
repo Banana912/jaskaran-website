@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaskaran Singh — Resume</title>
+  <meta name="description" content="Personal resume website of Jaskaran Singh" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== Header / Nav ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">JS<span class="logo-dot">.</span></a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="casual/index.html" class="site-switch" aria-label="Visit the casual site">
+        <span class="site-switch-label">Professional</span>
+        <span class="site-switch-visual" aria-hidden="true">
+          <span class="site-switch-thumb"></span>
+        </span>
+        <span class="site-switch-label site-switch-label--muted">Casual</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Playful nudge toward the casual site switch, only visible at the very top of the page -->
+  <a href="casual/index.html" class="top-hint" data-scroll-hint>
+    <span class="top-hint-text">(To see what I'm like when I'm not wearing a shirt and tie)</span>
+    <svg class="top-hint-arrow" viewBox="0 0 110 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M6 70 C 20 72, 34 34, 60 20 C 74 12, 84 10, 100 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1.5 8"/>
+      <path d="M84 4 L102 8 L92 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+
+  <!-- ===== Landing / About Me ===== -->
+  <section id="top" class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">Tech Student</p>
+
+      <h1 class="hero-title">Hi, I'm Jaskaran.</h1>
+
+      <p class="hero-subtitle">
+        A developer drawn to what happens under the hood — memory, data structures, and the systems most people abstract away. I work from first principles and I'm building toward security engineering.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#experience" class="btn btn-primary">View Experience</a>
+        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Education & Skills ===== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Education &amp; Skills</h2>
+
+      <div class="edu-skills-grid">
+        <!-- Education -->
+        <div class="edu-card">
+          <h3>Education</h3>
+
+          <div class="edu-item">
+            <div class="edu-item-header">
+              <h4>Bachelor of Computer Science (Professional)</h4>
+              <span class="edu-date">2026 - 2029</span>
+            </div>
+            <p class="edu-school">Royal Melbourne Institute of Technology (RMIT)</p>
+            <p class="edu-desc">
+              Relevant coursework: Data Structures & Algorithms, Software Engineering, Cyber Security.
+            </p>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-item-header">
+              <h4>High School Diploma</h4>
+              <span class="edu-date">2022 — 2025</span>
+            </div>
+            <p class="edu-school">Nossal High School</p>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="skills-card">
+          <h3>Technical Skills</h3>
+
+          <div class="skills-group">
+            <p class="skills-group-title">Languages</p>
+            <div class="tag-list">
+              <span class="tag">Python</span>
+              <span class="tag">Java</span>
+              <span class="tag">C++</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <p class="skills-group-title">Frameworks & Tools</p>
+            <div class="tag-list">
+              <span class="tag">Wireshark</span>
+              <span class="tag">Git</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Active Directory</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <p class="skills-group-title">Core Competencies</p>
+            <div class="tag-list">
+              <span class="tag">Problem Solving</span>
+              <span class="tag">Team Collaboration</span>
+              <span class="tag">Communication</span>
+              <span class="tag">Adaptability</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications slideshow -->
+      <div class="cert-block">
+        <h3 class="cert-heading">Certifications</h3>
+
+        <div class="cert-carousel" data-carousel>
+          <button type="button" class="cert-nav cert-nav--prev" data-carousel-prev aria-label="Previous certification">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+
+          <div class="cert-viewport">
+            <ul class="cert-track" data-carousel-track>
+
+              <!-- IT FUNDAMENTALS + -->
+              <li class="cert-slide">
+                <div class="cert-card">
+                  <div class="cert-badge">ITF+</div>
+                  <div class="cert-info">
+                    <h4>CompTIA ITF+</h4>
+                    <p class="cert-issuer">CompTIA</p>
+                    <p class="cert-meta">Issued <span>Month Year</span> · Credential ID <span>XXXXXXXX</span></p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- A + -->
+              <li class="cert-slide">
+                <div class="cert-card">
+                  <div class="cert-badge">A+</div>
+                  <div class="cert-info">
+                    <h4>CompTIA A+ COMING SOON!</h4>
+                    <p class="cert-issuer">CompTIA</p>
+                    <p class="cert-meta">Issued <span>Month Year</span> · Credential ID <span>XXXXXXXX</span></p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Network + -->
+              <li class="cert-slide">
+                <div class="cert-card">
+                  <div class="cert-badge">Net+</div>
+                  <div class="cert-info">
+                    <h4>CompTIA Network+ COMING SOON!</h4>
+                    <p class="cert-issuer">CompTIA</p>
+                    <p class="cert-meta">Issued <span>Month Year</span> · Credential ID <span>XXXXXXXX</span></p>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Security + -->
+              <li class="cert-slide">
+                <div class="cert-card">
+                  <div class="cert-badge">Sec+</div>
+                  <div class="cert-info">
+                    <h4>CompTIA Security+ COMING SOON!</h4>
+                    <p class="cert-issuer">CompTIA</p>
+                    <p class="cert-meta">Issued <span>Month Year</span> · Credential ID <span>XXXXXXXX</span></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <button type="button" class="cert-nav cert-nav--next" data-carousel-next aria-label="Next certification">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+
+        <div class="cert-dots" data-carousel-dots></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Work Experience ===== -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>UX/UI Web Designer</h3>
+              <span class="timeline-date">May 2026 - Present</span>
+            </div>
+            <p class="timeline-company">Dr Naba Alfayadh</p>
+            <ul class="timeline-list">
+              <li>Collaborated with Naba in producing a website that satisfies requirements.</li>
+              <li>Conducting User Centric Design to build a UI that caters to different target personas.</li>
+              <li>Hosting and ongoing maintenance, adding and updating articles through a dedicated CMS.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Home Labs and Projects</h3>
+                <span class="timeline-date">2026 - Onwards</span>
+              </div>
+              <p class="timeline-company">Github Repository</p>
+              <h4>Recent Projects:</h4>
+              <ul class="timeline-list">
+                <li>Beginner - Building Data Structures from scratch in C++</li>
+              </ul>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer / Contact ===== -->
+  <footer id="contact" class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h3>Let's Connect</h3>
+        <p>I'm always open to discussing new opportunities, collaborations, or interesting projects.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li>
+            <a href="mailto:contact@itsjaskaran.com">
+              <span class="icon" aria-hidden="true">✉</span> contact@itsjaskaran.com
+            </a>
+          </li>
+          <li>
+            <span class="icon" aria-hidden="true">📍</span> Melbourne, Australia
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Elsewhere</h4>
+        <ul class="footer-links">
+          <li><a href="https://www.linkedin.com/in/jaskaran-singh-013088393/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/Banana912" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Jaskaran Singh. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
